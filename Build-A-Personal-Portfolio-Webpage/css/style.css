@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-dark-grey: #212121;
+  --main-yellow: #eeede5;
+  --grey: #313131;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*------------ Nav bar ------------*/
+
+nav {  
+  position: fixed;
+  width: 100%;
+  background-color: var(--main-dark-grey);
+  box-shadow: 0 1px 0 black;
+}
+
+nav ul {
+  display: grid;
+  grid-template-areas: ". about projects contact";
+  grid-template-columns: auto repeat(3, minmax(100px, 10%));
+  grid-template-rows: 50px;
+  justify-items: center;  
+  align-items: center;
+  margin-right: 20px;  
+}
+
+nav ul li:first-child {
+  grid-area: about;
+}
+
+nav ul li:nth-child(2) {
+  grid-area: projects;
+}
+
+nav ul li:nth-child(3) {
+  grid-area: contact;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Manjari', sans-serif;  
+  color: white;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: var(--main-yellow);
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  width: 0px;
+  height: 1px;
+  background: var(--main-dark-grey);
+  left: 50%;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+  left: 0;
+  transform: translateY(4px);
+  background: var(--main-yellow);
+}
+
+/*------------ About section ------------*/
+
+#welcome-section {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-yellow);
+}
+
+h1 {
+  color: var(--main-dark-grey);  
+  font-family: 'Raleway', cursive;
+  font-size: 80px;
+  font-weight: bold;
+  cursor: default;
+}
+
+#welcome-section > p {
+  font-family: 'Manjari', sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: default;
+}
+
+/*------------ Projects section ------------*/
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Manjari', sans-serif;
+  font-weight: 100;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  cursor: default;
+  color: white;
+}
+
+#projects {
+  background-color: var(--main-dark-grey);
+  padding: 0 20px;
+  padding-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.projects-grid div {
+  background: var(--grey);
+  box-shadow: 2px 2px 2px black;
+  border-radius: 5px;
+}
+
+.project-tile a {
+  text-decoration: none;
+}
+
+a p {
+  color: white;
+  text-align: center;
+  font-family: 'Manjari', sans-serif;
+  font-weight: 100;
+  padding: 20px;
+  font-size: 20px;
+  transition: all 0.2s linear;  
+}
+
+a p:hover {
+  color: var(--main-yellow);
+}
+
+.btn-show-all {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-family: 'Manjari', sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background: var(--grey);
+  transition: all 0.5s linear;
+  box-shadow: 2px 2px 2px black;
+}
+
+#projects {
+  text-align: center;
+}
+
+.btn-show-all:hover {
+  color: var(--main-yellow);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(5px);  
+}
+
+.btn-show-all > i {
+  margin-left: 5px;
+  transform: translateX(3px);
+  transition: transform 0.2s ease-out;
+}
+
+/*------------ Contacts section ------------*/
+
+#contact {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-yellow);  
+}
+
+h3 {
+  color: var(--main-dark-grey);  
+  font-family: 'Raleway', cursive;
+  font-size: 80px;
+  font-weight: bold;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-dark-grey);
+  margin: 20px;
+  font-size: 25px;
+  font-family: 'Manjari', sans-serif;
+  transition: all 0.1s linear;
+}
+
+.fa-instagram {
+  margin-right: 1px;
+}
+
+.contact-details:hover {
+  transform: scale(1.05);
+}
+
+
+/*------------- Mobile version --------------*/
+
+@media (max-width: 650px) {
+  h1, h3 {
+    font-size: 60px;
+  }
+  
+  .contact-details {
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  .project-tile {
+    margin-bottom: -15px;
+  }
+}
+
+@media (max-width: 470px) {
+  nav ul {
+    grid-template-columns: auto repeat(3, minmax(90px, 100%));
+    justify-items: end;
+  }
+  
+  h1, h3 {
+    font-size: 50px;    
+  }
+  
+  h1, p {
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  #welcome-section p {
+    font-size: 20px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .project-tile {
+    margin-bottom: -30px;
+  }
+  
+  .btn-show-all {
+    margin-bottom: -5px;
+  }
+ 
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+  }
+}

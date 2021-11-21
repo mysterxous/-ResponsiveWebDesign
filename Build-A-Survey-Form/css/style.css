@@ -1,0 +1,83 @@
+body {
+  line-height: 1.4;
+  background-color: #D7DCDD;
+  width: 600px;
+  margin: auto; 
+}
+
+
+form {
+  background: rgba(21, 17, 87, 0.2);
+  padding: 2.5rem 2.5rem;
+  border-radius: 2rem;
+  width: 600px;
+  margin: auto; 
+}
+img {
+  width: 400px;
+  
+}
+
+.form-inputs {
+  display: block; 
+  width: 90%;
+  height: 2rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+
+
+#dropdown {
+  display: block; 
+  width: 95.5%;
+  height: 2rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+
+.input-headings {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+u {
+  text-decoration: underline;
+  color: red;
+}
+.upload-button {
+  width: 95%;
+  /* padding: 0.75rem;
+  background: red;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer; */
+}
+.submit-button {
+  width: 95%;
+  padding: 0.75rem;
+  background: rgb(3, 5, 41);
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#textarea {
+  width: 93%;
+}
+
+@media only screen and (max-width: 800px) 
+{
+  form {
+  width: 65%; 
+  height: auto;}
+}

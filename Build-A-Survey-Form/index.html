@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html>
+	
+
+<Header>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<h1 id="title"> COVID-19 Self-Assessment Questionnaire  </h1>
+</header>
+
+<Body>
+	<p id="description">
+		The purpose of this questionnaire is for you to self-observe your daily health prior to coming to work. Once you begin your workday, continue to observe yourself for any changes.
+	</p>
+	<p id="description">
+		Please answer the following questions once you begin your workday. 
+		<u>If your temperature is greater than 37.5° C, please stay home and call your supervisor.</u>
+	</p>
+	<p id="description">
+		All information provided is safe.
+	</p>
+
+	<form id="survey-form">
+
+		<div class="input-headings">
+
+			<label 
+				for="name" 
+				id="name-label"> 
+				<b>Name  </b>
+			</label>
+			<input 
+				id="name" 
+				type="text" 
+				name="name" 
+				placeholder="Enter your name" 
+				class="form-inputs" 
+				required>
+			</input>
+			<br>
+			
+			<label 
+				for="Position" 
+				id="Position-label"> 
+				<b>Position  </b>
+			</label>
+			<input 
+				id="Position" 
+				type="text" 
+				name="name" 
+				placeholder="Enter your position" 
+				class="form-inputs" 
+				required>
+			</input>
+			<br>
+
+			<label 
+				for="email" 
+				id="email-label">
+				<b>Email </b>
+			</label>
+			<input 
+				id="email" 
+				type="email" 
+				name="email" 
+				placeholder="Enter your email" 
+				class="form-inputs" 
+				required>
+			</input>
+			<br>
+
+			<label 
+				for="number" 
+				id="number-label"> 
+				<b> Age  </b> 
+			</label>
+			<input 
+				id="number" 
+				type="number" 
+				name="number" 
+				min="0" 
+				max="100" 
+				placeholder="Age" 
+				class="form-inputs"
+				required> </input>
+			<br>
+
+			<label 
+				for="dropdown" 
+				id="model" 
+				style="width: 90vw;"> 
+				<b> Team </b> 
+			</label>
+			<select id="dropdown">
+				<option value="Back_office"> Back office</option>
+				<option value="Commercial"> Commercial</option>
+				<option value="Robotics"> Robotics</option>
+				<option value="Software"> Software</option>
+				<!-- <option value="Cyber_Truck"> Cyber Truck</option> -->
+			</select>
+			<br>
+			<br>
+
+			<label 
+				for="questionnaire" 
+				id="questionnaire"> 
+				<h2>Questionnaire</h2> 
+			</label>
+			<!-- <br> -->
+			<!-- <br> -->
+
+		
+			<label 
+				for="Q1" 
+				id="Q1"> 
+				<b> 1. Have you been tested for COVID-19 (awaiting results)? If yes, stay home until results are received </b> 
+			</label>
+			<br>
+			<input id="Q1" type="radio" name="color" value="black">
+			<label for="" model_color"> Yes </label>
+			<br>
+			<input id="Q1" type="radio" name="color" value="white">
+			<label for="Q1"> No </label>
+			<br>
+			<br>
+
+			<label 
+				for="Q2" 
+				id="Q2"> 
+				<b> 2. Have you had prolonged close contact with someone who tested positive for COVID-19? </b> 
+			</label>
+			<br>
+			<input id="Q2" type="radio" name="color" value="black">
+			<label for="" model_color"> Yes </label>
+			<br>
+			<input id="Q2" type="radio" name="color" value="white">
+			<label for="Q2"> No </label>
+			<br>
+			<br>
+
+			<label 
+				for="Q3" 
+				id="Q3"> 
+				<b> 3. Has a member of your household been tested for COVID-19 (awaiting results)? If Yes, stay home until results are received. </b> 
+			</label>
+			<br>
+			<input id="Q3" type="radio" name="color" value="black">
+			<label for="" model_color"> Yes </label>
+			<br>
+			<input id="Q3" type="radio" name="color" value="white">
+			<label for="Q3"> No </label>
+			<br>
+			<br>
+
+			<label 
+				for="Q4" 
+				id="Q4"> 
+				<b> 4. Has a household member had prolonged close contact with someone who tested positive for COVID-19?Has a household member had prolonged close contact with someone who tested positive for COVID-19? </b> 
+			</label>
+			<br>
+			<input id="Q4" type="radio" name="color" value="black">
+			<label for="" model_color"> Yes </label>
+			<br>
+			<input id="Q4" type="radio" name="color" value="white">
+			<label for="Q4"> No </label>
+			<br>
+			<br>
+
+			<label 
+				for="Q5" 
+				id="Q5"> 
+				<b> 5. Have you traveled out of the country within the last 14 days? If Yes, stay home for 14 days from your arrival back to the Thailand. </b> 
+			</label>
+			<br>
+			<input id="Q5" type="radio" name="color" value="black">
+			<label for="" model_color"> Yes </label>
+			<br>
+			<input id="Q5" type="radio" name="color" value="white">
+			<label for="Q5"> No </label>
+			<br>
+			<br>
+
+			<label 
+				for="Q6" 
+				id="Q6"> 
+				<b> 6. Have you been COVID-19 infected? </b> 
+			</label>
+			<br>
+			<input id="Q6" type="radio" name="color" value="black">
+			<label for="" model_color"> Yes </label>
+			<br>
+			<input id="Q6" type="radio" name="color" value="white">
+			<label for="Q6"> No </label>
+			<br>
+			<br>
+
+
+
+			<label for="Assessment"> <b>7. COVID-19 Self-Assessment</b></label>
+			<br>
+
+			<input id="checkbox" type="checkbox" name="Assessment" value="autopilot">
+			<label 
+				for="checkbox"> 
+				1. Cough (not related to allergies)
+			</label>
+			<br>
+
+			<input id="checkbox" type="checkbox" name="Assessment" value="autopilot">
+			<label 
+				for="checkbox"> 
+				2. Shortness of breath / Difficulty breathing 
+			</label>
+			<br>
+
+			<input id="checkbox" type="checkbox" name="Assessment" value="autopilot">
+			<label 
+				for="checkbox"> 
+				3. Fever
+			</label>
+			<br>
+
+			<input id="checkbox" type="checkbox" name="Assessment" value="autopilot">
+			<label 
+				for="checkbox"> 
+				4. Chills
+			</label>
+			<br>
+
+			<input id="checkbox" type="checkbox" name="Assessment" value="autopilot">
+			<label 
+				for="checkbox"> 
+				5. muscle pain
+			</label>
+			<br>
+
+			<input id="checkbox" type="checkbox" name="Assessment" value="autopilot">
+			<label 
+				for="checkbox"> 
+				6. New loss of taste or smell
+			</label>
+			<br>
+
+			<input id="checkbox" type="checkbox" name="Assessment" value="autopilot">
+			<label 
+				for="checkbox"> 
+				7. Sore throat or headache
+			</label>
+			<br>
+			<br>
+
+			<label 
+				for="ATK_info" 
+				id="ATK_info"> 
+				<b> 8. Antigen Test Kit Information </b> 
+				<br>
+				Antigen Test Kit Result
+			</label>
+			<br>
+			<input id="Q8" type="radio" name="color" value="black">
+			<label for="Q8"> Negative </label>
+			<br>
+			<input id="Q8" type="radio" name="color" value="white">
+			<label for="Q6"> Positive </label>
+			<br>
+			<br>
+<!-- 
+			<label id="example">example: </label>
+			<br>
+			<img 
+				src="images/ATK_example.png"
+				alt="ATK_example" class="center"
+			> -->
+			
+			<input id="upload" type="file" value="Upload" class="upload-button">
+			<br>
+			<br>
+			<label id="textarea">Additional instructions: </label>
+			<br>
+			<textarea 
+				id="textarea" 
+				name"instructions" 
+				rows="5" cols="59.5">
+			</textarea>
+			<br>
+
+			<input id="submit" type="submit" value="Sumit" class="submit-button">
+
+		</div>
+
+	</form>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
